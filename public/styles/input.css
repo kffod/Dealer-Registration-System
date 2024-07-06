@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-custom-width {
+  background-size: 100%;
+  background-position:top-right;
+}
+.error-message{
+@apply flex justify-center items-center px-4 py-2 font-bold text-xl border-red-400 bg-red-100 text-red-400  m-2
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Update Details</title>
+</head>
+<body class="bg-cyan-600 flex items-center justify-center my-3 h-screen">
+    <div class="bg-white p-8 rounded shadow-md ">
+     
+        <form action="/user/update-details" method="POST">
+            <div class="flex justify-between space-x-4">
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-bold mb-2" for="companyName">Company Name</label>
+                    <input class="border rounded w-full py-2 px-3" type="text" value="<%= user.companyName %>" id="companyName" name="companyName" placeholder="Enter company name" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-bold mb-2" for="ownerName">Owner Name</label>
+                    <input class="border rounded w-full py-2 px-3" type="text" value="<%= user.ownerName %>" id="ownerName" name="ownerName" placeholder="Enter owner name" required>
+                </div>
+            </div>
+           <div class="flex justify-between">
+            <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2" for="gstNo">GST No</label>
+                <input class="border rounded w-full py-2 px-3" type="text" value="<%= user.gstNo %>" id="gstNo" name="gstNo" placeholder="Enter GST No" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2" for="email">Email</label>
+                <input class="border rounded w-full py-2 px-3" type="email" value="<%= user.email %>" id="email" name="email" placeholder="Enter email" required>
+            </div>
+           </div>
+          <div class="flex justify-between">
+            <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2" for="state">State</label>
+                <input class="border rounded w-full py-2 px-3" type="text" value="<%= user.state %>"id="state" name="state" placeholder="Enter state" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2" for="city">City</label>
+                <input class="border rounded w-full py-2 px-3" type="text" value="<%= user.city %>"id="city" name="city" placeholder="Enter city" required>
+            </div>
+          </div>
+           
+            <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2" for="address">Address</label>
+                <input class="border rounded w-full py-2 px-3" type="text" value="<%= user.address %>"id="address" name="address" placeholder="Enter address" required>
+            </div>
+            <button class="bg-cyan-500 text-white px-4 py-2 rounded" type="submit">Update</button>
+        </form>
+    </div>
+</body>
+</html>
